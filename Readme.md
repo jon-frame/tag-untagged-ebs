@@ -58,13 +58,13 @@ A sample log for a run of the function is below:
 
 START RequestId: 99ad4a57-13c0-11e9-80b3-27c5633ce5a7 Version: $LATEST
 Starting EBS Volume Tagger....
---------------------------------
+- - - - - - - - - - - - - - - - - - - - - - - - - 
 The Mandatory Tags that should be present on EBS Volumes (according to AWS Config rule) are currently: {'CostCentre', 'Anothertag', 'Application'}
 Checking AWS Config Compliance results.....
---------------------------------==============
+- - - - - - - - - - - - - - - - - - - - - - - - - 
 Found 3 EBS volumes which are missing one or more of these tags. Attempting to fix..
 Non-compliant volume vol-0504aa8548a4b92d3 is attached to instance i-092afc416297cc215 . Trying to add missing tags from the instance..'
---------------------------------
+- - - - - - - - - - - - - - - - - - - - - - - - - 
 Trying to tag vol-0504aa8548a4b92d3 with any missing tag values from mandatory tags: {'CostCentre', 'Anothertag', 'Application'}
 EBS tag values: [{'Key': 'Application', 'Value': 'App1'}, {'Key': 'device', 'Value': '/dev/xvda'}, {'Key': 'instance_id', 'Value': 'i-092afc416297cc215'}]
 Attached EC2 tag values: [{'Key': 'Application', 'Value': 'App1'}, {'Key': 'CostCentre', 'Value': 'Wholesale'}]
@@ -81,7 +81,7 @@ Checking EBS tag value for: Application
 There is an EBS tag value for Application (value found is: App1 )
 
 Non-compliant volume vol-05d55eea091c6f32e is attached to instance i-0e1deaaaf162da286 . Trying to add missing tags from the instance..'
---------------------------------
+- - - - - - - - - - - - - - - - - - - - - - - - - 
 Trying to tag vol-05d55eea091c6f32e with any missing tag values from mandatory tags: {'CostCentre', 'Anothertag', 'Application'}
 EBS tag values: [{'Key': 'device', 'Value': '/dev/sda1'}, {'Key': 'instance_id', 'Value': 'i-0e1deaaaf162da286'}, {'Key': 'Name', 'Value': 'winbastion'}]
 Attached EC2 tag values: [{'Key': 'Name', 'Value': 'winbastion'}]

@@ -56,7 +56,6 @@ It is suggested that the function is run on a schedule via a scheduled CloudWatc
 ## Sample Log
 A sample log for a run of the function is below:
 
-
 START RequestId: 99ad4a57-13c0-11e9-80b3-27c5633ce5a7 Version: $LATEST
 Starting EBS Volume Tagger....
 ==================================
